@@ -1,7 +1,10 @@
 from algorithm import *
 
+#Driver test###########
 
-input = [1,1,1]
-number = 3
-output_structure = secu_ops(input, input.__len__() - 1, number)
+#input = list of numbers
+input = [2,4,1,5,5,1,3,2]
+#number = target number
+number = 115
+output_structure = secu_ops(input, number)
 print_sequence(input, output_structure[1], number)
