@@ -58,8 +58,8 @@ def print_sequence(input, matrix, number):
         print("No sequence of the numbers ", end='')
         for n in input:
             print(n,end=' ')
-        print("can create the output of " + str(n))
-        print("   using adition, multiplication or exponenciation.")
+        print("can create the output of " + str(number))
+        print("   using adition, multiplication or exponenciation.\n")
         return []
     for i in range(len(input), 1, -1):
         if matrix[index - 1][n - input[index]]:
@@ -83,4 +83,5 @@ def print_sequence(input, matrix, number):
         for i in range(0, len(output)):
             print(output[i],end='')
             print(str(input[i + 1]) + ')',end='')
+        print("")
     return output
